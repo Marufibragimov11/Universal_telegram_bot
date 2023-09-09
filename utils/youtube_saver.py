@@ -19,7 +19,7 @@ def download_yt(url):
     ydl_opts = {
         # 'format': 'bestvideo[ext=mp4]+bestaudio[ext=mp4]/mp4+best[height<=480]',
         'format': 'best',
-        'outtmpl': f"D:/python/Mohirdev/telegram_bot/aiogram/Expences/downloads/{name_generator()}.mp4",
+        'outtmpl': f"D:/python/Mohirdev/telegram_bot/aiogram/Universal_telegram_bot/downloads/{name_generator()}.mp4",
     }
     ydl = yt_dlp.YoutubeDL(ydl_opts)
     ydl.download([url])

@@ -48,7 +48,6 @@ async def send_video_yt(message: types.Message, state: FSMContext):
     if 'https://youtu.be/' in url:
         await message.answer('🔍')
         name = download_yt(url)
-        print(name)
         try:
             with open(name, 'rb') as video:
                 await bot.send_video(chat_id=message.from_user.id, video=video)
