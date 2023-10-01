@@ -23,8 +23,8 @@ async def send_video(message: types.Message, state: FSMContext):
     if 'https://www.instagram.com/' in url:
         await message.answer('🔍')
         r_url = save_insta(url)
-        if r_url['media']:
-            await message.reply_video(video=r_url['media'], caption="Tayyor✅")
+        if r_url:
+            await message.reply_video(video=r_url, caption="Tayyor✅")
             await message.answer("Quidagi bo'limlardan birini tanlang 👇🏻", reply_markup=menu_btn)
             await state.finish()
         else:
