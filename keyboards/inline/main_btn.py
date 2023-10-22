@@ -11,8 +11,6 @@ menu_btn = InlineKeyboardMarkup(
         ],
         [
             InlineKeyboardButton(text="⬇️Instagramdan yuklash", callback_data="insta_save"),
-        ],
-        [
             InlineKeyboardButton(text="⬇️YouTubedan yuklash", callback_data="yt_save"),
         ],
     ],

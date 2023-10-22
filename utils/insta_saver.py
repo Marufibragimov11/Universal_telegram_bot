@@ -1,3 +1,10 @@
+def save_insta(url):
+    replaced_url = url.replace("www.", "dd")
+    return replaced_url
+
+
+save_insta("https://www.instagram.com/reel/CxnqogZt3BQ/?igshid=NmQ4MjZlMjE5YQ==")
+
 # import requests
 #
 #
@@ -15,9 +22,3 @@
 #     response = requests.get(link, headers=headers, params=querystring)
 #
 #     return response.json()
-def save_insta(url):
-    replaced_url = url.replace("www.", "dd")
-    return replaced_url
-
-
-save_insta("https://www.instagram.com/reel/CxnqogZt3BQ/?igshid=NmQ4MjZlMjE5YQ==")
